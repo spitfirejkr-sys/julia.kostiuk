@@ -3,14 +3,6 @@ function toggleMenu(){
   el.classList.toggle("show");
 }
 
-function fakeSubmit(e){
-  e.preventDefault();
-  const msg = document.getElementById("formMsg");
-  if (msg) msg.textContent = "Дякую! Я скоро зв’яжусь з вами.";
-  e.target.reset();
-  return false;
-}
-
 const yearEl = document.getElementById("year");
 if (yearEl) yearEl.textContent = new Date().getFullYear();
 
